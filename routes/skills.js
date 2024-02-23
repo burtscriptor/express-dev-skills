@@ -10,4 +10,6 @@ router.get('/:id', skillsController.show);
 
 router.post('/', skillsController.create); 
 
+router.delete('/:id', skillsController.delete); // is right path?
+
 module.exports = router;

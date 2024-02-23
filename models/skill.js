@@ -7,7 +7,8 @@ const skills = [
 module.exports = {
     getAll,
     getOne,
-    create
+    create,
+    deleteOne,
 };
 
 function create(skill) {
@@ -26,4 +27,9 @@ function getAll() {
     return skills;
 }
 
+function deleteOne(id) {
+    id = parseInt(id);
+    const index = skills.findIndex(skills => skill.id === id);
+    skills.splice(index, 1); 
+} // try name if not skill
 
