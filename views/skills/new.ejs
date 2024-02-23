@@ -8,6 +8,11 @@
 </head>
 <body>
     <a href="/">Home</a> 
-    <h3><%= skill.name %></h3> 
+    <h1>Add a new skill</h1>
+    <form action="/skills" method="POST" autocomplete="off">
+        <input type="text" name="name">
+        <button type="submit">Save skill</button>
+    </form>
+    
   </body>
 </html>

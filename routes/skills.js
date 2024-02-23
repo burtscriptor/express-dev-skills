@@ -4,11 +4,10 @@ var skillsController = require('../controllers/skills')
 
 router.get('/', skillsController.index);
 
+router.get('/new', skillsController.new); // Add skill
+
 router.get('/:id', skillsController.show);
 
+router.post('/', skillsController.create); 
+
 module.exports = router;
-
-server.listen(3000, () => {
-    console.log('server running on http://localhost:3000/')
-
-});
